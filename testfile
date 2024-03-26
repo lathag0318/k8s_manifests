@@ -1,1 +1,8 @@
-this is file for testting 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginxpod
+  namespace: test-ns
+  labels:
+    app: nginxapp
+
