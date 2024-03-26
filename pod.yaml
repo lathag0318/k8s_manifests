@@ -1,3 +1,7 @@
 apiVersion: v1
 kind: Pod
-this is file for testting 
+metadata:
+   name: mavenwebapppod
+   labels: 
+    app: mavenwebapp
+  namespace: test-ns
