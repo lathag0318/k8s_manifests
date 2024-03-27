@@ -3,5 +3,12 @@ kind: Pod
 metadata:
    name: mavenwebapppod
    labels: 
-    app: mavenwebapp
-  namespace: test-ns
+     app: mavenwebapp
+   namespace: k8s-ns
+spec:
+  containers:
+    - name: mavenwebappcontainer
+      image: dockerhandson/maven-web-application:1
+      ports:
+       - containerPort: 8080
+
