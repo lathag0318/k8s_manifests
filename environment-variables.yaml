@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: environment-variables
+  namespace: k8s-ns
+spec:
+  containers:
+    - name: env-var-container
+      image: nginx:1.7.9
+      env:
+       - name: BASE_URL
+         value: "https://api.company.com/"
+       - name: CONNECTION_STRING
+         value: "mongodb://localhost:27017"
